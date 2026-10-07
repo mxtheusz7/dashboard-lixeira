@@ -1,0 +1,35 @@
+/* Faz width/height incluírem padding e borda: facilita calcular tamanhos */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  line-height: 1.5;
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+/* Remove margens padrão do navegador */
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+/* Faz botões e campos usarem a mesma fonte da aplicação */
+button,
+input,
+select {
+  font: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
