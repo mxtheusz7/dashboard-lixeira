@@ -1,0 +1,13 @@
+.cabecalho {
+  margin-bottom: var(--space-5);
+}
+
+.titulo {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+}
+
+.descricao {
+  margin-top: var(--space-1);
+  color: var(--color-text-muted);
+}

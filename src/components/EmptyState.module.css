@@ -1,0 +1,16 @@
+.vazio {
+  padding: var(--space-8) var(--space-5);
+  text-align: center;
+  background-color: var(--color-surface);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.titulo {
+  font-weight: var(--font-weight-bold);
+}
+
+.descricao {
+  margin-top: var(--space-1);
+  color: var(--color-text-muted);
+}

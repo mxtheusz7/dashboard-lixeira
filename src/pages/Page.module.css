@@ -1,0 +1,137 @@
+/* Grades compartilhadas pelas páginas */
+
+.kpis {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: var(--space-4);
+  margin-bottom: var(--space-5);
+}
+
+/* Visão Geral: 6 indicadores, distribuídos em 2, 3 ou 6 colunas conforme a largura */
+.kpisSeis {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 720px) {
+  .kpisSeis {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1300px) {
+  .kpisSeis {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+.linha {
+  display: grid;
+  gap: var(--space-5);
+  margin-bottom: var(--space-5);
+}
+
+.larga {
+  grid-template-columns: 2fr 1fr;
+}
+
+.estreita {
+  grid-template-columns: 1fr 2fr;
+}
+
+.metade {
+  grid-template-columns: 1fr 1fr;
+}
+
+.pilha {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.link {
+  font-size: var(--font-size-sm);
+  white-space: nowrap;
+}
+
+.filtros {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+}
+
+.filtros label {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+.filtros select {
+  padding: var(--space-2) var(--space-3);
+  color: var(--color-text);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+}
+
+.contagem {
+  margin-left: auto;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+.botao {
+  display: block;
+  margin: var(--space-4) auto 0;
+  padding: var(--space-2) var(--space-5);
+  color: var(--color-primary);
+  cursor: pointer;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius-sm);
+}
+
+.botao:hover:not(:disabled) {
+  color: #fff;
+  background-color: var(--color-primary);
+}
+
+.botao:disabled {
+  color: var(--color-text-muted);
+  cursor: default;
+  border-color: var(--color-border);
+}
+
+.informacoes {
+  margin: 0;
+}
+
+.informacoes > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--space-1) var(--space-4);
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.informacoes > div:last-child {
+  border-bottom: none;
+}
+
+.informacoes dt {
+  color: var(--color-text-muted);
+}
+
+.informacoes dd {
+  margin: 0;
+  font-weight: var(--font-weight-medium);
+}
+
+@media (max-width: 1000px) {
+  .larga,
+  .estreita,
+  .metade {
+    grid-template-columns: 1fr;
+  }
+}

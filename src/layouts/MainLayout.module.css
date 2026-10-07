@@ -1,0 +1,24 @@
+.app {
+  display: flex;
+  min-height: 100vh;
+}
+
+.principal {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0; /* evita que tabelas largas estourem a tela */
+}
+
+.conteudo {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: var(--space-6);
+}
+
+@media (max-width: 900px) {
+  .conteudo {
+    padding: var(--space-4);
+  }
+}

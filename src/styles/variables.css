@@ -17,6 +17,32 @@
   --color-danger: #d32f2f;
   --color-info: #0277bd;
 
+  /* Versões suaves (fundo de badges/alertas) e de texto legível sobre elas */
+  --color-success-soft: #e8f5e9;
+  --color-warning-soft: #fff3df;
+  --color-danger-soft: #fdecea;
+  --color-info-soft: #e3f2fb;
+  --color-neutral-soft: #eceff3;
+  --color-success-text: #1b5e20;
+  --color-warning-text: #8a4f00;
+  --color-danger-text: #b71c1c;
+  --color-info-text: #01579b;
+
+  /* ===== Categorias de resíduos (PROVISÓRIO: confirmar com o grupo) =====
+     Inspiradas no padrão de cores da coleta seletiva (CONAMA 275/2001). */
+  --color-cat-plastico: #e0483f;
+  --color-cat-papel: #1e88e5;
+  --color-cat-metal: #f2b705;
+  --color-cat-vidro: #43a047;
+  --color-cat-organico: #8d6e63;
+  --color-cat-rejeito: #78909c;
+
+  /* ===== Navegação lateral ===== */
+  --color-sidebar-bg: #14301f;
+  --color-sidebar-text: #bcd3c3;
+  --color-sidebar-active-bg: #1f4a30;
+  --color-sidebar-active-text: #ffffff;
+
   /* ===== Espaçamentos ===== */
   --space-1: 0.25rem;
   --space-2: 0.5rem;
